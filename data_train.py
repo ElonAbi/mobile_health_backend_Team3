@@ -13,7 +13,7 @@ def train(data):
     from sklearn.model_selection import train_test_split
 
     # Define features and target variable
-    X = df.drop(columns=['label'])
+    X = df.drop(columns=['label', 'timestamp'])
     y = df['label']
 
     # Split data
